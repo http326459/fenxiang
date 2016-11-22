@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6{font-weight: normal;}
 #index #contab .intabb{position:absolute;left:33.5%;top:0;width:31%;}
 #index #contab .intabc{position:absolute;right:0;top:0;width:32%;}
 #index #contab .intabc a{text-align:left;}
-#index .footer{background: url(../images/bot_02.jpg) no-repeat;min-height:200px;background-size: 100%;position: relative;}
+#index .footer{background: url(../images/bot_02.jpg) no-repeat;min-height:180px;background-size: 100%;position: relative;}
 #index .footer a{position: absolute;left:50%;bottom: 50%;transform: translateX(-50%);width: 80%;}
 #index .footer a{width: 80%;d}
 
