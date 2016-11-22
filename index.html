@@ -31,30 +31,27 @@
 						   				}
 			   					}
 		   				}
-		   				
+		   				var atop = $(".soup").offset().top;
+						var btop = $(".allsheep").offset().top;
+						var ctop = $(".person").offset().top;
+						$(".intaba a").click(function(){
+							$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
+							$(".tab img").attr("src","images/sheepb.png");
+							$(window).scrollTop(atop);
+
+						});
+						$(".intabb a").click(function(){
+							$(".tab img").attr("src","images/sh.png");
+							$(window).scrollTop(btop);
+
+						});
+						$(".intabc a").click(function(){
+							$(".tab img").attr("src","images/sheepd.png");
+							$(window).scrollTop(ctop);
+						});
 				    });
 				});
-				var atop = $(".soup").offset().top;
-				var btop = $(".allsheep").offset().top;
-				var ctop = $(".person").offset().top;
-				console.log(atop+"ppc");
-				console.log(btop+"mmm");
-				console.log(ctop+"llll");
-				$(".intaba a").click(function(){
-					$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
-					$(".tab img").attr("src","images/sheepb.png");
-					$(window).scrollTop(atop+10);
-					
-				});
-				$(".intabb a").click(function(){
-					$(".tab img").attr("src","images/sh.png");
-					$(window).scrollTop(btop+10);
-					
-				});
-				$(".intabc a").click(function(){
-					$(".tab img").attr("src","images/sheepd.png");
-					$(window).scrollTop(ctop+10);
-				});
+
    		});
     </script>
 </head>
