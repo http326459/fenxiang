@@ -15,14 +15,14 @@
    		});
    		
    		$(function(){
-   			 
+        var souptop = $(".soup").offset().top;
+        var quanyangtop = $(".allsheep").offset().top;
+        var keketop = $(".person").offset().top;   			 
    			$(document).ready(function () { 
 				    $(window).scroll(function () {
 				        var wortop = $(window).scrollTop();
 				        var navtop = $("#contab").offset().top;
-				        var souptop = $(".soup").offset().top;
-				        var quanyangtop = $(".allsheep").offset().top;
-				        var keketop = $(".person").offset().top;
+
 				      if(wortop < 220){
 		   					$("#contab").css("position","relative");
 		   					$(".tab img").attr("src","images/navbai.jpg");
@@ -36,25 +36,23 @@
 						   				}
 			   					}
 		   				}
-		   				$(".intaba a").click(function(){
-								$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
-								$(".tab img").attr("src","images/sheepb.png");
-								$(window).scrollTop(souptop);
-								
-							});
-							$(".intabb a").click(function(){
-								$(".tab img").attr("src","images/sh.png");
-								$(window).scrollTop(quanyangtop+10);
-								
-							});
-							$(".intabc a").click(function(){
-								$(".tab img").attr("src","images/sheepd.png");
-								$(window).scrollTop(keketop+10);
-								
-							});
 				    });
 				});
-				
+				$(".intaba a").click(function(){
+					$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
+					$(".tab img").attr("src","images/sheepb.png");
+					$(window).scrollTop(souptop);
+					
+				});
+				$(".intabb a").click(function(){
+					$(".tab img").attr("src","images/sh.png");
+					$(window).scrollTop(quanyangtop+10);
+					
+				});
+				$(".intabc a").click(function(){
+					$(".tab img").attr("src","images/sheepd.png");
+					$(window).scrollTop(keketop+10);
+				});
    		});
     </script>
 </head>
