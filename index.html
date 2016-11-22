@@ -17,7 +17,10 @@
    		$(function(){
    			$(document).ready(function () { 
 				    $(window).scroll(function () {
-				        var wortop = $(window).scrollTop();
+				       var wortop = $(window).scrollTop();
+					var atop = $(".soup").offset().top;
+					var btop = $(".allsheep").offset().top;
+					var ctop = $(".person").offset().top;
 				      if(wortop < atop){
 		   					$("#contab").css("position","relative");
 		   					$(".tab img").attr("src","images/navbai.jpg");
@@ -31,9 +34,7 @@
 						   				}
 			   					}
 		   				}
-		   				var atop = $(".soup").offset().top;
-						var btop = $(".allsheep").offset().top;
-						var ctop = $(".person").offset().top;
+		   				
 						$(".intaba a").click(function(){
 							$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
 							$(".tab img").attr("src","images/sheepb.png");
@@ -42,12 +43,12 @@
 						});
 						$(".intabb a").click(function(){
 							$(".tab img").attr("src","images/sh.png");
-							$(window).scrollTop(btop);
+							$(window).scrollTop(btop+10);
 
 						});
 						$(".intabc a").click(function(){
 							$(".tab img").attr("src","images/sheepd.png");
-							$(window).scrollTop(ctop);
+							$(window).scrollTop(ctop+10);
 						});
 				    });
 				});
