@@ -15,43 +15,40 @@
    		});
    		
    		$(function(){
-        var souptop = $(".soup").offset().top;
-        var quanyangtop = $(".allsheep").offset().top;
-        var keketop = $(".person").offset().top;   			 
+   			 
    			$(document).ready(function () { 
 				    $(window).scroll(function () {
 				        var wortop = $(window).scrollTop();
-				        var navtop = $("#contab").offset().top;
-
 				      if(wortop < 220){
 		   					$("#contab").css("position","relative");
 		   					$(".tab img").attr("src","images/navbai.jpg");
 		   				}else if(wortop > 220){
 		   					$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
 		   					$(".tab img").attr("src","images/sheepb.png");
-			   					if(wortop > 1107){
+			   					if(wortop > 1298){
 			   						$(".tab img").attr("src","images/sh.png");
 					   					if(wortop > 1824){
 					   						$(".tab img").attr("src","images/sheepd.png");
 						   				}
 			   					}
 		   				}
+		   				
 				    });
 				});
 				$(".intaba a").click(function(){
 					$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
 					$(".tab img").attr("src","images/sheepb.png");
-					$(window).scrollTop(souptop);
+					$(window).scrollTop(220);
 					
 				});
 				$(".intabb a").click(function(){
 					$(".tab img").attr("src","images/sh.png");
-					$(window).scrollTop(quanyangtop+10);
+					$(window).scrollTop(1300);
 					
 				});
 				$(".intabc a").click(function(){
 					$(".tab img").attr("src","images/sheepd.png");
-					$(window).scrollTop(keketop+10);
+					$(window).scrollTop(2140);
 				});
    		});
     </script>
