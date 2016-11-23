@@ -15,9 +15,6 @@
    		});
    		
    		$(function(){
-   			var atop=0;
-   			var btop=0;
-   			var ctop=0;
    			$(document).ready(function () { 
 				    $(window).scroll(function () {
 			        var wortop = $(window).scrollTop();
@@ -39,11 +36,10 @@
 		   				}
 				    });
 				});
-				console.log(atop);
 				$(".intaba a").click(function(){
 								$("#contab").css({"position":"fixed","left":0,"top":0,"z-index":10});
 								$(".tab img").attr("src","images/sheepb.png");
-								$(window).scrollTop(atop);
+								$(window).scrollTop(260);
 								
 							});
 							$(".intabb a").click(function(){
